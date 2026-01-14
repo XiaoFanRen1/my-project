@@ -2,7 +2,7 @@
 
 ## 快速开始
 
-欢迎使用杰理AC79开源项目，在开始进入项目之前，请详细阅读以下芯片介绍获得对AC79系列芯片大概认识，SDK固件包不含开发文档，进行开发之前详细阅读[SDK开发文档](https://gitee.com/link?target=https%3A%2F%2Fdoc.zh-jieli.com%2FAC79%2Fzh-cn%2Fmaster%2Findex.html)，为用户提供完善的开发例程，帮助开发者快速顺利地使用AC79系列芯片进行方案开发。
+欢迎使用杰理AC79开源项目，在开始进入项目之前，请详细阅读以下芯片介绍获得对AC79系列芯片大概认识，SDK固件包不含开发文档，进行开发之前详细阅读[SDK开发文档](https://doc.yunthinker.com/#/docs/AC791N/%E5%BC%80%E5%8F%91%E6%9D%BF%E4%BB%8B%E7%BB%8D/1)，为用户提供完善的开发例程，帮助开发者快速顺利地使用AC79系列芯片进行方案开发。
 
 ## 芯片概述
 
@@ -123,5 +123,5 @@
 ## 参考资源
 
 - 芯片数据手册&原理图 : [doc/datasheet/AC791N规格书](https://gitee.com/Jieli-Tech/fw-AC79_AIoT_SDK/blob/release/AC79NN_SDK_V1.2.0/doc/datasheet/AC791N规格书)
-- SDK 发布版本信息 : [AC79NN_SDK_发布版本信息](https://gitee.com/link?target=https%3A%2F%2Fdoc.zh-jieli.com%2FAC79%2Fzh-cn%2Frelease_v1.2.0%2Fother%2Fversion%2Findex.html)
-- 钉钉技术支持群号 : 15375032297 或 31275808
+- SDK 发布版本信息 : [AC79NN_SDK_发布版本信息]
+- 钉钉技术支持群号 : --
