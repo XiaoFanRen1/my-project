@@ -1,0 +1,13 @@
+
+.section .sys.version, "ax"
+
+.global lib_mbedtls_3_4_0_version
+
+lib_mbedtls_3_4_0_version:
+
+#ifdef CONFIG_RELEASE_ENABLE
+
+#else
+
+.asciz "MBEDTLS_3_4_0-*modified*-{env:USER}-@{DATE}-${COMMID}"
+#endif

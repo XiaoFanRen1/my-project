@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="mbedtls" />
+		<Option pch_mode="2" />
+		<Option compiler="pi32" />
+		<Build>
+			<Target title="Release">
+				<Option output="../../../../cpu/wl82/liba/libmbedtls_3_4_0.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="pi32v2_r3_empty_compiler" />
+				<Compiler>
+					<Add option="-flto" />
+					<Add option="-Oz" />
+					<Add option="-ffunction-sections" />
+					<Add option="-Wno-unused-value" />
+					<Add option="-D_POSIX_SOURCE" />
+					<Add option="-D_SYS_SELECT_H" />
+					<Add option="-DCONFIG_CHRDEV" />
+					<Add option="-D__unix__" />
+					<Add option="-DCONFIG_FREE_RTOS_ENABLE" />
+					<Add option="-DUSE_RTOS" />
+					<Add directory="../../../../include_lib" />
+					<Add directory="../../../../include_lib/system" />
+					<Add directory="../../../../include_lib/newlib/include" />
+					<Add directory="../../../../include_lib/system/generic" />
+					<Add directory="../../../../include_lib/driver/cpu/wl82" />
+					<Add directory="../../../../include_lib/net" />
+					<Add directory="../../../../include_lib/net/lwip_2_1_3/lwip/app" />
+					<Add directory="../../../../include_lib/net/lwip_2_1_3/lwip/app/sock_api" />
+					<Add directory="../../../../include_lib/net/lwip_2_1_3/lwip/src/include" />
+					<Add directory="../../../../include_lib/net/lwip_2_1_3/lwip/port" />
+					<Add directory="../../../../include_lib/system/os/FreeRTOS/pi32_lto" />
+					<Add directory="../../../../include_lib/net/mbedtls_3_4_0" />
+					<Add directory="../../../../include_lib/net/mbedtls_3_4_0/mbedtls" />
+					<Add directory="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/configs" />
+					<Add directory="../../../../include_lib/net/mbedtls_3_4_0/" />
+					<Add directory="../library" />
+					<Add directory="../3rdparty/everest/include" />
+					<Add directory="../3rdparty/everest/include/everest" />
+					<Add directory="../3rdparty/everest/include/everest/kremlib" />
+					<Add directory="../tests/include" />
+					<Add directory="../port" />
+				</Compiler>
+				<Linker>
+					<Add option="-flto" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="./" />
+		</Compiler>
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/aes.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/aria.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/asn1.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/asn1write.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/base64.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/bignum.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/build_info.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/camellia.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/ccm.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/chacha20.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/chachapoly.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/check_config.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/cipher.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/cmac.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/compat-2.x.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/config_psa.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/constant_time.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/ctr_drbg.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/debug.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/des.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/dhm.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/ecdh.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/ecdsa.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/ecjpake.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/ecp.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/entropy.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/error.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/gcm.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/hkdf.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/hmac_drbg.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/legacy_or_psa.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/lms.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/mbedtls_config.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/md.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/md5.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/memory_buffer_alloc.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/net_sockets.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/nist_kw.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/oid.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/pem.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/pk.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/pkcs12.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/pkcs5.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/pkcs7.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/platform.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/platform_time.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/platform_util.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/poly1305.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/private_access.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/psa_util.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/ripemd160.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/rsa.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/sha1.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/sha256.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/sha512.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/ssl.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/ssl_cache.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/ssl_ciphersuites.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/ssl_cookie.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/ssl_ticket.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/threading.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/timing.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/version.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/x509.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/x509_crl.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/x509_crt.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/mbedtls/x509_csr.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/psa/crypto.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/psa/crypto_builtin_composites.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/psa/crypto_builtin_primitives.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/psa/crypto_compat.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/psa/crypto_config.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/psa/crypto_driver_common.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/psa/crypto_driver_contexts_composites.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/psa/crypto_driver_contexts_primitives.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/psa/crypto_extra.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/psa/crypto_platform.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/psa/crypto_se_driver.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/psa/crypto_sizes.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/psa/crypto_struct.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/psa/crypto_types.h" />
+		<Unit filename="../../../../include_lib/net/mbedtls_3_4_0/psa/crypto_values.h" />
+		<Unit filename="../3rdparty/everest/include/everest/Hacl_Curve25519.h" />
+		<Unit filename="../3rdparty/everest/include/everest/everest.h" />
+		<Unit filename="../3rdparty/everest/include/everest/kremlib.h" />
+		<Unit filename="../3rdparty/everest/include/everest/kremlib/FStar_UInt128.h" />
+		<Unit filename="../3rdparty/everest/include/everest/kremlib/FStar_UInt64_FStar_UInt32_FStar_UInt16_FStar_UInt8.h" />
+		<Unit filename="../3rdparty/everest/include/everest/kremlin/c_endianness.h" />
+		<Unit filename="../3rdparty/everest/include/everest/kremlin/internal/builtin.h" />
+		<Unit filename="../3rdparty/everest/include/everest/kremlin/internal/callconv.h" />
+		<Unit filename="../3rdparty/everest/include/everest/kremlin/internal/compat.h" />
+		<Unit filename="../3rdparty/everest/include/everest/kremlin/internal/debug.h" />
+		<Unit filename="../3rdparty/everest/include/everest/kremlin/internal/target.h" />
+		<Unit filename="../3rdparty/everest/include/everest/kremlin/internal/types.h" />
+		<Unit filename="../3rdparty/everest/include/everest/kremlin/internal/wasmsupport.h" />
+		<Unit filename="../3rdparty/everest/include/everest/vs2013/Hacl_Curve25519.h" />
+		<Unit filename="../3rdparty/everest/include/everest/vs2013/inttypes.h" />
+		<Unit filename="../3rdparty/everest/include/everest/vs2013/stdbool.h" />
+		<Unit filename="../3rdparty/everest/include/everest/x25519.h" />
+		<Unit filename="../3rdparty/everest/library/Hacl_Curve25519_joined.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../3rdparty/everest/library/everest.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../3rdparty/everest/library/x25519.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/aes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/aesce.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/aesce.h" />
+		<Unit filename="../library/aesni.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/aesni.h" />
+		<Unit filename="../library/alignment.h" />
+		<Unit filename="../library/aria.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/asn1parse.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/asn1write.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/base64.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/bignum.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/bignum_core.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/bignum_core.h" />
+		<Unit filename="../library/bignum_mod.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/bignum_mod.h" />
+		<Unit filename="../library/bignum_mod_raw.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/bignum_mod_raw.h" />
+		<Unit filename="../library/bignum_mod_raw_invasive.h" />
+		<Unit filename="../library/bn_mul.h" />
+		<Unit filename="../library/camellia.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/ccm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/chacha20.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/chachapoly.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/check_crypto_config.h" />
+		<Unit filename="../library/cipher.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/cipher_wrap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/cipher_wrap.h" />
+		<Unit filename="../library/cmac.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/common.h" />
+		<Unit filename="../library/constant_time.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/constant_time_internal.h" />
+		<Unit filename="../library/constant_time_invasive.h" />
+		<Unit filename="../library/ctr_drbg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/debug.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/des.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/dhm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/ecdh.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/ecdsa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/ecjpake.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/ecp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/ecp_curves.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/ecp_internal_alt.h" />
+		<Unit filename="../library/ecp_invasive.h" />
+		<Unit filename="../library/entropy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/entropy_poll.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/entropy_poll.h" />
+		<Unit filename="../library/error.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/gcm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/hash_info.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/hash_info.h" />
+		<Unit filename="../library/hkdf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/hmac_drbg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/lmots.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/lmots.h" />
+		<Unit filename="../library/lms.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/md.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/md5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/md_wrap.h" />
+		<Unit filename="../library/memory_buffer_alloc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/mps_common.h" />
+		<Unit filename="../library/mps_error.h" />
+		<Unit filename="../library/mps_reader.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/mps_reader.h" />
+		<Unit filename="../library/mps_trace.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/mps_trace.h" />
+		<Unit filename="../library/net_sockets.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/nist_kw.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/oid.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/padlock.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/padlock.h" />
+		<Unit filename="../library/pem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/pk.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/pk_wrap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/pk_wrap.h" />
+		<Unit filename="../library/pkcs12.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/pkcs5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/pkcs7.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/pkparse.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/pkwrite.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/pkwrite.h" />
+		<Unit filename="../library/platform.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/platform_util.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/poly1305.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/psa_crypto.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/psa_crypto_aead.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/psa_crypto_aead.h" />
+		<Unit filename="../library/psa_crypto_cipher.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/psa_crypto_cipher.h" />
+		<Unit filename="../library/psa_crypto_client.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/psa_crypto_core.h" />
+		<Unit filename="../library/psa_crypto_driver_wrappers.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/psa_crypto_driver_wrappers.h" />
+		<Unit filename="../library/psa_crypto_ecp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/psa_crypto_ecp.h" />
+		<Unit filename="../library/psa_crypto_hash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/psa_crypto_hash.h" />
+		<Unit filename="../library/psa_crypto_invasive.h" />
+		<Unit filename="../library/psa_crypto_its.h" />
+		<Unit filename="../library/psa_crypto_mac.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/psa_crypto_mac.h" />
+		<Unit filename="../library/psa_crypto_pake.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/psa_crypto_pake.h" />
+		<Unit filename="../library/psa_crypto_random_impl.h" />
+		<Unit filename="../library/psa_crypto_rsa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/psa_crypto_rsa.h" />
+		<Unit filename="../library/psa_crypto_se.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/psa_crypto_se.h" />
+		<Unit filename="../library/psa_crypto_slot_management.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/psa_crypto_slot_management.h" />
+		<Unit filename="../library/psa_crypto_storage.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/psa_crypto_storage.h" />
+		<Unit filename="../library/psa_its_file.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/psa_util.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/ripemd160.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/rsa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/rsa_alt_helpers.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/rsa_alt_helpers.h" />
+		<Unit filename="../library/sha1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/sha256.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/sha512.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/ssl_cache.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/ssl_ciphersuites.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/ssl_client.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/ssl_client.h" />
+		<Unit filename="../library/ssl_cookie.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/ssl_debug_helpers.h" />
+		<Unit filename="../library/ssl_debug_helpers_generated.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/ssl_misc.h" />
+		<Unit filename="../library/ssl_msg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/ssl_ticket.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/ssl_tls.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/ssl_tls12_client.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/ssl_tls12_server.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/ssl_tls13_client.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/ssl_tls13_generic.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/ssl_tls13_invasive.h" />
+		<Unit filename="../library/ssl_tls13_keys.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/ssl_tls13_keys.h" />
+		<Unit filename="../library/ssl_tls13_server.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/threading.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/timing.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/version.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/version_features.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/x509.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/x509_create.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/x509_crl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/x509_crt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/x509_csr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/x509write_crt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../library/x509write_csr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../port/aes_alt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../port/aes_alt.h" />
+		<Unit filename="../port/dirent.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../port/local_dirent.h" />
+		<Unit filename="../port/sha1_alt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../port/sha256_alt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../tests/src/certs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<debugger>
+				<remote_debugging>
+					<options conn_type="0" serial_baud="115200" ip_address="127.0.0.1" ip_port="9999" />
+				</remote_debugging>
+			</debugger>
+			<code_completion />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
