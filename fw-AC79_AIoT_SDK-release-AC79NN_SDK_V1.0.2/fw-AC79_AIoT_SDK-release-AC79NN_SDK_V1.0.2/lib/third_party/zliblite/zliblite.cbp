@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="zliblite" />
+		<Option pch_mode="2" />
+		<Option compiler="pi32" />
+		<Build>
+			<Target title="Release">
+				<Option output="../../../include_lib/liba/wl82/zliblite.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="pi32v2_r3_lto_compiler" />
+				<Compiler>
+					<Add option="-flto" />
+					<Add option="-Oz" />
+					<Add option="-DUSE_FILE32API" />
+					<Add option="-DCONFIG_FREE_RTOS_ENABLE" />
+					<Add option="-DMAX_WBITS=15" />
+					<Add directory="../../../include_lib/system/generic" />
+					<Add directory="../../../include_lib" />
+					<Add directory="../../../include_lib/system" />
+					<Add directory="../../../include_lib/system/device" />
+					<Add directory="../../../include_lib/net/zliblite" />
+					<Add directory="src" />
+					<Add directory="../../../include_lib/utils" />
+					<Add directory="../../../include_lib/driver/cpu/wl82" />
+					<Add directory="../../../include_lib/system/os/FreeRTOS/pi32v2" />
+				</Compiler>
+				<Linker>
+					<Add option="-flto" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="./" />
+		</Compiler>
+		<Unit filename="src/adler32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/compress.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/crc32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/deflate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/infback.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/inffast.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/inflate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/inftrees.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/ioapi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/miniunz.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/trees.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/uncompr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/unzip.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/zutil.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<debugger>
+				<remote_debugging>
+					<options conn_type="0" serial_baud="115200" ip_address="127.0.0.1" ip_port="9999" />
+				</remote_debugging>
+			</debugger>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

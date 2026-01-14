@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="finsh" />
+		<Option pch_mode="2" />
+		<Option compiler="pi32" />
+		<Build>
+			<Target title="Release">
+				<Option output="../../../../cpu/wl80/liba/finsh.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="pi32v2_r3_lto_compiler" />
+				<Compiler>
+					<Add option="-flto" />
+					<Add option="-Oz" />
+					<Add option="-DCONFIG_FREE_RTOS_ENABLE" />
+					<Add option="-DCONFIG_THREAD_ENABLE" />
+					<Add option="-DRT_USING_FINSH" />
+					<Add option="-DFINSH_USING_SYMTAB" />
+					<Add option="-DFINSH_USING_DESCRIPTION" />
+					<Add option="-DFINSH_USING_HISTORY" />
+					<Add option="-DFINSH_USING_MSH" />
+					<Add option="-DFINSH_USING_MSH_DEFAULT" />
+					<Add directory="../../../../include_lib/system/generic" />
+					<Add directory="../../../../include_lib" />
+					<Add directory="../../../../include_lib/system" />
+					<Add directory="../../../../lib/utils/finsh" />
+					<Add directory="../../../../lib/utils" />
+					<Add directory="../../../../lib" />
+					<Add directory="../../../../include_lib/driver/cpu/wl80" />
+					<Add directory="../../../../include_lib/utils/event" />
+					<Add directory="../../../../include_lib/utils" />
+					<Add directory="../../../../include_lib/driver/device" />
+					<Add directory="../../../../include_lib/driver" />
+					<Add directory="../../../../include_lib/system/os/FreeRTOS" />
+					<Add directory="../../../../include_lib/system/os/FreeRTOS/pi32v2" />
+				</Compiler>
+				<Linker>
+					<Add option="-flto" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="./" />
+		</Compiler>
+		<Unit filename="../cmd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../finsh.h" />
+		<Unit filename="../finsh_api.h" />
+		<Unit filename="../finsh_compiler.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../finsh_error.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../finsh_error.h" />
+		<Unit filename="../finsh_heap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../finsh_heap.h" />
+		<Unit filename="../finsh_init.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../finsh_node.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../finsh_node.h" />
+		<Unit filename="../finsh_ops.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../finsh_ops.h" />
+		<Unit filename="../finsh_parser.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../finsh_parser.h" />
+		<Unit filename="../finsh_token.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../finsh_token.h" />
+		<Unit filename="../finsh_var.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../finsh_var.h" />
+		<Unit filename="../finsh_vm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../finsh_vm.h" />
+		<Unit filename="../msh.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../msh.h" />
+		<Unit filename="../msh_file.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../shell.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../shell.h" />
+		<Unit filename="../symbol.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<debugger>
+				<remote_debugging>
+					<options conn_type="0" serial_baud="115200" ip_address="127.0.0.1" ip_port="9999" />
+				</remote_debugging>
+			</debugger>
+			<code_completion />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

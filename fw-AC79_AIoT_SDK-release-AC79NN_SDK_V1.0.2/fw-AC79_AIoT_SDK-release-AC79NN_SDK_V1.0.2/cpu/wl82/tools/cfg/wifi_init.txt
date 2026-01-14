@@ -1,0 +1,1 @@
+{"mode":"mp_test", "ssid":"CMW-AP", "pwd":"", "pa":"5 5 2 3 11 0", "xosc":"11 10", "power":"32", "debug_io":"PC00", "reg_pwr":6, "force_bt_test":0,"ble_pwr_set": 2}
