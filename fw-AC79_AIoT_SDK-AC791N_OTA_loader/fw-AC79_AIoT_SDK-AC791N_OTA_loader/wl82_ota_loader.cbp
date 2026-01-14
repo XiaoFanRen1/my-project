@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CodeBlocks_project_file>
+<FileVersion major="1" minor="6" />
+<Project>
+<Option title="wl82_ota_loader" />
+<Option compiler="pi32v2_r1_lto_compil6r" />
+<Build>
+<Target title="Release">
+<Option output="uboot/apps/post_build/wl82/uboot.exe" prefix_auto="0" extension_auto="0" />
+<Option object_output="obj/Release/" />
+<Option type="1" />
+<Option compiler="pi32v2_r1_lto_compil6r" />
+<Compiler>
+<Add option="-mllvm -pi32v2-large-program" />
+<Add option="-Wuninitialized" />
+<Add option="-Wno-invalid-noreturn" />
+<Add option="-fno-common" />
+<Add option="-integrated-as" />
+<Add option="-Oz" />
+<Add option="-g" />
+<Add option="-O0" />
+<Add option="-flto" />
+<Add option="-Os" />
+<Add option="-Wcast-align" />
+<Add option="-ffreestanding" />
+<Add option="-w" />
+<Add option="-fallow-pointer-null" />
+<Add option="-D__GCC_PI32V2__" />
+<Add option="-DCONFIG_CPU_WL82" />
+<Add option="-DCONFIG_NEW_BREDR_ENABLE" />
+<Add option="-DCONFIG_NEW_MODEM_ENABLE" />
+<Add option="-DBT_LOCAL_NAME=\&quot;AC791N_update\&quot;" />
+<Add option="-DUSB_HID_MODULE_CONTROL=1" />
+<Add option="-DNOFLOAT" />
+<Add directory="uboot/apps/include" />
+<Add directory="uboot/apps/include/bluetooth" />
+<Add directory="uboot/apps/include/common" />
+<Add directory="uboot/libs/include/cpu/wl82" />
+<Add directory="uboot/libs/include/cpu" />
+<Add directory="uboot/include_lib" />
+<Add directory="uboot/include_lib/common" />
+<Add directory="uboot/include_lib/system" />
+<Add directory="uboot/include_lib/cpu/wl82" />
+<Add directory="uboot/include_lib/cpu/wl82/asm" />
+<Add directory="uboot/include_lib/cpu/wl82/asm/power" />
+<Add directory="uboot/include_lib/logic" />
+<Add directory="uboot/apps/include/common/jl_rcsp" />
+<Add directory="uboot/include_lib/jl_rcsp" />
+<Add directory="uboot/libs/logic/include" />
+<Add directory="uboot/include_lib/system/generic" />
+<Add directory="uboot/include_lib/logic/dev_update" />
+<Add directory="uboot/apps/code/common/usb" />
+<Add directory="uboot/include_lib/common/usb" />
+<Add directory="uboot/include_lib/common/usb/device" />
+</Compiler>
+<Linker>
+<Add option="--plugin-opt=-pi32v2-always-use-itblock" />
+<Add option="--plugin-opt=-enable-ipra=true" />
+<Add option="--plugin-opt=-pi32v2-merge-max-offset=4096" />
+<Add option="--plugin-opt=-pi32v2-enable-simd=false" />
+<Add option="--plugin-opt=mcpu=r1" />
+<Add option="--plugin-opt=-global-merge-on-const" />
+<Add option="--plugin-opt=-inline-threshold=5" />
+<Add option="--plugin-opt=-inline-normal-into-special-section=true" />
+<Add option="--plugin-opt=-dont-used-symbol-list=malloc,free,sprintf,printf,puts,putchar" />
+<Add option="--plugin-opt=save-temps" />
+<Add option="--plugin-opt=-pi32v2-enable-rep-memop" />
+<Add option="--sort-common" />
+<Add option="--dont-complain-call-overflow" />
+<Add option="--gc-sections" />
+<Add option="--start-group" />
+<Add option="uboot/include_lib/liba/wl82/usb_hid_ota/logic_lib.a" />
+<Add option="uboot/include_lib/liba/wl82/usb_hid_ota/cpu_lib.a" />
+<Add option="uboot/include_lib/liba/wl82/usb_hid_ota/btctrler_lib.a" />
+<Add option="uboot/include_lib/liba/wl82/usb_hid_ota/bt_protocol_lib.a" />
+<Add option="--end-group" />
+<Add option="-Tuboot/apps/post_build/wl82/uboot.ld" />
+<Add option="-M=uboot/apps/post_build/wl82/uboot.map" />
+</Linker>
+<ExtraCommands>
+<Add after="uboot\apps\post_build\wl82\download.bat uboot" />
+<Mode after="always" />
+</ExtraCommands>
+</Target>
+</Build>
+<Unit filename="uboot/apps/code/bluetooth/ble_rcsp_server.c"><Option compilerVer="CC"/></Unit>
+<Unit filename="uboot/apps/code/common/common.c"><Option compilerVer="CC"/></Unit>
+<Unit filename="uboot/apps/code/common/custom_cfg.c"><Option compilerVer="CC"/></Unit>
+<Unit filename="uboot/apps/code/common/lbuf_new.c"><Option compilerVer="CC"/></Unit>
+<Unit filename="uboot/apps/code/common/ltv_format.c"><Option compilerVer="CC"/></Unit>
+<Unit filename="uboot/apps/code/common/main.c"><Option compilerVer="CC"/></Unit>
+<Unit filename="uboot/apps/code/common/msg.c"><Option compilerVer="CC"/></Unit>
+<Unit filename="uboot/apps/code/common/printf-stdarg.c"><Option compilerVer="CC"/></Unit>
+<Unit filename="uboot/apps/code/common/update_main.c"><Option compilerVer="CC"/></Unit>
+<Unit filename="uboot/apps/code/common/usb/device/custom_hid.c"><Option compilerVer="CC"/></Unit>
+<Unit filename="uboot/apps/code/common/usb/device/descriptor.c"><Option compilerVer="CC"/></Unit>
+<Unit filename="uboot/apps/code/common/usb/device/hid.c"><Option compilerVer="CC"/></Unit>
+<Unit filename="uboot/apps/code/common/usb/device/usb_device.c"><Option compilerVer="CC"/></Unit>
+<Unit filename="uboot/apps/code/common/usb/device/usb_test.c"><Option compilerVer="CC"/></Unit>
+<Unit filename="uboot/apps/code/common/usb/device/user_setup.c"><Option compilerVer="CC"/></Unit>
+<Unit filename="uboot/apps/code/common/usb/usb_common_def.h" />
+<Unit filename="uboot/apps/code/common/usb/usb_config.c"><Option compilerVer="CC"/></Unit>
+<Unit filename="uboot/apps/code/common/usb/usb_config.h" />
+<Unit filename="uboot/apps/code/common/usb/usb_std_class_def.h" />
+<Unit filename="uboot/apps/code/common/version.c"><Option compilerVer="CC"/></Unit>
+<Unit filename="uboot/apps/code/cpu/wl82/config.c"><Option compilerVer="CC"/></Unit>
+<Unit filename="uboot/apps/code/cpu/wl82/debug.c"><Option compilerVer="CC"/></Unit>
+<Unit filename="uboot/apps/code/cpu/wl82/reset.c"><Option compilerVer="CC"/></Unit>
+<Unit filename="uboot/apps/code/cpu/wl82/uart.c"><Option compilerVer="CC"/></Unit>
+<Unit filename="uboot/apps/code/cpu/wl82/version.S" />
+<Unit filename="uboot/apps/include/common/circular_buf.h" />
+<Unit filename="uboot/apps/include/common/config.h" />
+<Unit filename="uboot/apps/include/common/custom_cfg.h" />
+<Unit filename="uboot/apps/include/common/jl_rcsp/rcsp_control.h" />
+<Unit filename="uboot/apps/include/common/jl_rcsp/rcsp_hid_inter.h" />
+<Unit filename="uboot/apps/include/common/ltv_format.h" />
+<Unit filename="uboot/apps/include/common/update_main.h" />
+<Unit filename="uboot/include_lib/btctrler/hci_transport.h" />
+<Unit filename="uboot/include_lib/btstack/ble_api.h" />
+<Unit filename="uboot/include_lib/btstack/bluetooth.h" />
+<Unit filename="uboot/include_lib/btstack/le_user.h" />
+<Unit filename="uboot/include_lib/common/common.h" />
+<Unit filename="uboot/include_lib/common/debug.h" />
+<Unit filename="uboot/include_lib/common/init.h" />
+<Unit filename="uboot/include_lib/common/jiffies.h" />
+<Unit filename="uboot/include_lib/common/list.h" />
+<Unit filename="uboot/include_lib/common/msg.h" />
+<Unit filename="uboot/include_lib/common/sys_timer.h" />
+<Unit filename="uboot/include_lib/common/thread.h" />
+<Unit filename="uboot/include_lib/common/uart.h" />
+<Unit filename="uboot/include_lib/common/usb/ch9.h" />
+<Unit filename="uboot/include_lib/common/usb/device/custom_hid.h" />
+<Unit filename="uboot/include_lib/common/usb/device/descriptor.h" />
+<Unit filename="uboot/include_lib/common/usb/device/hid.h" />
+<Unit filename="uboot/include_lib/common/usb/device/usb_stack.h" />
+<Unit filename="uboot/include_lib/common/usb/usb_phy.h" />
+<Unit filename="uboot/include_lib/cpu/wl82/asm/clock.h" />
+<Unit filename="uboot/include_lib/cpu/wl82/asm/clock_hw.h" />
+<Unit filename="uboot/include_lib/cpu/wl82/asm/cpu.h" />
+<Unit filename="uboot/include_lib/cpu/wl82/asm/csfr.h" />
+<Unit filename="uboot/include_lib/cpu/wl82/asm/debug.h" />
+<Unit filename="uboot/include_lib/cpu/wl82/asm/gpio.h" />
+<Unit filename="uboot/include_lib/cpu/wl82/asm/hw_cpu.h" />
+<Unit filename="uboot/include_lib/cpu/wl82/asm/hwi.h" />
+<Unit filename="uboot/include_lib/cpu/wl82/asm/irq.h" />
+<Unit filename="uboot/include_lib/cpu/wl82/asm/power/p33.h" />
+<Unit filename="uboot/include_lib/cpu/wl82/asm/usb.h" />
+<Unit filename="uboot/include_lib/cpu/wl82/asm/wdt.h" />
+<Unit filename="uboot/include_lib/cpu/wl82/memory.h" />
+<Unit filename="uboot/include_lib/cpu/wl82/p33_interface.h" />
+<Unit filename="uboot/include_lib/cpu/wl82/reset.h" />
+<Unit filename="uboot/include_lib/lib_include.h" />
+<Unit filename="uboot/include_lib/logic/boot.h" />
+<Unit filename="uboot/include_lib/system/bank_switch.h" />
+<Unit filename="uboot/include_lib/system/crypto_toolbox/Crypto_hash.h" />
+<Unit filename="uboot/include_lib/system/crypto_toolbox/aes_cmac.h" />
+<Unit filename="uboot/include_lib/system/crypto_toolbox/bigint.h" />
+<Unit filename="uboot/include_lib/system/crypto_toolbox/bigint_impl.h" />
+<Unit filename="uboot/include_lib/system/crypto_toolbox/crypto.h" />
+<Unit filename="uboot/include_lib/system/crypto_toolbox/ecdh.h" />
+<Unit filename="uboot/include_lib/system/crypto_toolbox/endian.h" />
+<Unit filename="uboot/include_lib/system/crypto_toolbox/hmac.h" />
+<Unit filename="uboot/include_lib/system/crypto_toolbox/micro-ecc/uECC.h" />
+<Unit filename="uboot/include_lib/system/crypto_toolbox/rijndael.h" />
+<Unit filename="uboot/include_lib/system/crypto_toolbox/sha256.h" />
+<Unit filename="uboot/include_lib/system/generic/errno_base.h" />
+<Unit filename="uboot/include_lib/system/generic/ioctl.h" />
+<Unit filename="uboot/include_lib/system/generic/lbuf.h" />
+<Unit filename="uboot/include_lib/system/generic/list.h" />
+<Unit filename="uboot/include_lib/system/generic/log.h" />
+<Unit filename="uboot/include_lib/system/generic/printf.h" />
+<Unit filename="uboot/include_lib/system/generic/spinlock.h" />
+<Unit filename="uboot/include_lib/system/generic/sys_timer.h" />
+<Unit filename="uboot/include_lib/system/generic/typedef.h" />
+<Unit filename="uboot/include_lib/system/includes.h" />
+<Unit filename="uboot/include_lib/system/malloc.h" />
+<Unit filename="uboot/include_lib/system/os/FreeRTOS/FreeRTOSConfig.h" />
+<Unit filename="uboot/include_lib/system/os/FreeRTOS/pi32v2/portmacro.h" />
+<Unit filename="uboot/include_lib/system/os/os_api.h" />
+<Unit filename="uboot/include_lib/system/os/os_cpu.h" />
+<Unit filename="uboot/include_lib/system/os/os_error.h" />
+<Unit filename="uboot/include_lib/system/os/os_type.h" />
+<Unit filename="uboot/include_lib/system/task.h" />
+<Unit filename="uboot/include_lib/system/timer.h" />
+<Unit filename="uboot/libs/include/cpu/rand64.h" />
+<Unit filename="uboot/libs/include/cpu/sdmmc_cpu_interface.h" />
+<Unit filename="uboot/libs/logic/include/dev_update/ex_api_code.h" />
+<Unit filename="uboot/libs/logic/include/dev_update/fs_v2_update.h" />
+<Unit filename="uboot/libs/logic/include/dev_update/updata_mode.h" />
+<Unit filename="uboot/libs/logic/include/logic_include.h" />
+</Project>
+</CodeBlocks_project_file>
